@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revival Solutions</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         /* Reset margins and padding */
         * {
@@ -25,24 +25,24 @@
             align-items: flex-start;
             padding-top: 100px; /* Add padding to make room for header */
             text-align: center;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
         }
 
-        /* Large text container */
+        /* Main content layout */
         .content {
             max-width: 1000px;
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.6); /* Transparent black for readability */
-            border-radius: 10px;
             margin: 0 20px;
         }
 
-        /* Main title */
+        /* Main title with fancier font */
         h1 {
             font-size: 4rem;
             color: #FFD700; /* Gold color for emphasis */
-            font-weight: 700;
+            font-family: 'Playfair Display', serif;
             margin-bottom: 20px;
-            animation: fadeInUp 2s ease-in-out;
+            font-weight: 700;
         }
 
         /* Subtitle for business */
@@ -50,7 +50,6 @@
             font-size: 2rem;
             margin-top: 10px;
             font-weight: 400;
-            animation: fadeInUp 2s ease-in-out 1s;
         }
 
         /* Paragraph for business description */
@@ -58,20 +57,18 @@
             font-size: 1.2rem;
             margin-top: 30px;
             line-height: 1.8;
-            animation: fadeInUp 2s ease-in-out 2s;
+            font-family: 'Roboto', sans-serif;
         }
 
         /* Styling for the services section */
         .services {
             margin-top: 40px;
-            animation: fadeInUp 2s ease-in-out 3s;
         }
 
         .service {
             font-size: 1.5rem;
             margin: 15px 0;
             color: #FFD700;
-            animation: fadeInUp 2s ease-in-out 4s;
         }
 
         .service span {
@@ -90,26 +87,19 @@
             cursor: pointer;
             color: #000;
             transition: background-color 0.3s;
-            animation: fadeInUp 2s ease-in-out 5s;
         }
 
         .contact-btn:hover {
             background-color: #FFB600;
         }
 
-        /* Keyframe animations */
-        @keyframes fadeInUp {
+        /* Fade-in keyframe */
+        @keyframes fadeIn {
             0% {
                 opacity: 0;
-                transform: translateY(30px);
-            }
-            50% {
-                opacity: 0.5;
-                transform: translateY(15px);
             }
             100% {
                 opacity: 1;
-                transform: translateY(0);
             }
         }
 
