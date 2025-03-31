@@ -16,50 +16,62 @@
         /* Set up the body and background */
         body {
             font-family: 'Roboto', sans-serif;
-            background: url('https://images.unsplash.com/photo-1531224003964-7a0152e6d019?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhY2h8OHx8cG93ZXJ8ZW58MHx8fHwxNjg3MDE3NjI5&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center fixed;
+            background: url('https://images.unsplash.com/photo-1513799832541-4eb94b0d1eb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhY2h8N3x8cG93ZXJ8ZW58MHx8fHwxNjg3MDI0MTY1&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center fixed;
             background-size: cover;
             color: white;
             height: 100vh;
             display: flex;
             justify-content: center;
-            align-items: center;
-        }
-
-        /* Main container */
-        .container {
-            background-color: rgba(0, 0, 0, 0.7); /* Slight transparency for readability */
-            padding: 40px;
-            border-radius: 10px;
-            max-width: 1000px;
-            width: 100%;
+            align-items: flex-start;
+            padding-top: 100px; /* Add padding to make room for header */
             text-align: center;
         }
 
+        /* Large text container */
+        .content {
+            max-width: 1000px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6); /* Transparent black for readability */
+            border-radius: 10px;
+            margin: 0 20px;
+        }
+
+        /* Main title */
         h1 {
-            font-size: 3.5rem;
+            font-size: 4rem;
             color: #FFD700; /* Gold color for emphasis */
             font-weight: 700;
+            margin-bottom: 20px;
             animation: fadeInUp 2s ease-in-out;
         }
 
+        /* Subtitle for business */
         h2 {
-            font-size: 1.8rem;
+            font-size: 2rem;
             margin-top: 10px;
             font-weight: 400;
             animation: fadeInUp 2s ease-in-out 1s;
         }
 
-        /* Styling for services section */
-        .services {
+        /* Paragraph for business description */
+        .description {
+            font-size: 1.2rem;
             margin-top: 30px;
+            line-height: 1.8;
             animation: fadeInUp 2s ease-in-out 2s;
         }
 
-        .service {
-            font-size: 1.3rem;
-            margin: 20px 0;
-            color: #FFD700;
+        /* Styling for the services section */
+        .services {
+            margin-top: 40px;
             animation: fadeInUp 2s ease-in-out 3s;
+        }
+
+        .service {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            color: #FFD700;
+            animation: fadeInUp 2s ease-in-out 4s;
         }
 
         .service span {
@@ -78,7 +90,7 @@
             cursor: pointer;
             color: #000;
             transition: background-color 0.3s;
-            animation: fadeInUp 2s ease-in-out 4s;
+            animation: fadeInUp 2s ease-in-out 5s;
         }
 
         .contact-btn:hover {
@@ -103,7 +115,7 @@
 
         /* Footer Styling */
         footer {
-            margin-top: 40px;
+            margin-top: 60px;
             font-size: 0.9rem;
             color: #ffffff;
             text-align: center;
@@ -117,7 +129,7 @@
         /* Service Images */
         .service img {
             width: 100%;
-            max-width: 350px;
+            max-width: 450px;
             border-radius: 8px;
             margin-top: 10px;
         }
@@ -126,23 +138,31 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="content">
         <!-- Main Business Title -->
         <h1>Revival Solutions</h1>
         <h2>Providing Professional Services by Thomas Frakes and Darin Kastle</h2>
+
+        <!-- Business Description -->
+        <p class="description">
+            At Revival Solutions, we pride ourselves on offering top-notch services that revitalize your surroundings and bring a fresh new look to your home or business. Whether you need powerwashing for your driveway, car detailing to make your vehicle shine, or lawn services to maintain a pristine yard, we’re here to help. With over a decade of experience, our team guarantees high-quality results, great customer service, and a reliable, friendly approach to each project.
+        </p>
 
         <!-- Services Section -->
         <div class="services">
             <div class="service">
                 <span>Powerwashing:</span> Starting at $150
+                <p>Our power washing services will remove dirt, grime, and years of buildup, making your driveway, patio, or building look brand new. Whether it’s for your home or business, we provide professional results with attention to detail.</p>
                 <img src="https://images.unsplash.com/photo-1574158622681-d1b63b61d743?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhY2h8MjN8fHBvd2VyfGVufDB8fHx8MTY4NzAxNzYyNA&ixlib=rb-1.2.1&q=80&w=1080" alt="Powerwashing">
             </div>
             <div class="service">
                 <span>Car Detailing:</span> Starting at $100
+                <p>Our car detailing service ensures your vehicle gets the care it deserves. From deep interior cleaning to exterior polishing, we restore your car's appearance to showroom quality. We use the best products to maintain your car's paintwork and interior.</p>
                 <img src="https://images.unsplash.com/photo-1605572630195-3ed74f06d25d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhY2h8Mnx8fGNhciBkZWFsaW5nfGVufDB8fHx8fDE2ODcwMTgwMjg&ixlib=rb-1.2.1&q=80&w=1080" alt="Car Detailing">
             </div>
             <div class="service">
                 <span>Lawn Services:</span> Starting at $50
+                <p>Keep your lawn looking beautiful year-round with our lawn care services. Whether it's mowing, trimming, or fertilizing, we help you achieve a lush, green lawn that enhances the curb appeal of your property.</p>
                 <img src="https://images.unsplash.com/photo-1565061435-4a42160197c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhY2h8MTF8fGxhdyBtYWluJ3NjYXBlfGVufDB8fHx8fDE2ODcwMTgwMzg&ixlib=rb-1.2.1&q=80&w=1080" alt="Lawn Services">
             </div>
         </div>
