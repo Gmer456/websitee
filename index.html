@@ -69,11 +69,12 @@
         .service {
             background-color: #ffffff;
             padding: 30px;
-            width: 30%;
+            width: 32%; /* Make the boxes a bit wider */
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: left;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 20px;
         }
 
         .service:hover {
@@ -102,22 +103,26 @@
             font-weight: 700;
         }
 
-        /* Button style */
-        .contact-btn {
-            margin-top: 40px;
-            padding: 15px 30px;
-            background-color: #333;
-            border: 1px solid #333;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            color: white;
-            text-decoration: none;
-            transition: background-color 0.3s;
+        /* Why Choose Section */
+        .why-choose {
+            background-color: #ffffff;
+            padding: 40px;
+            margin-top: 60px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
         }
 
-        .contact-btn:hover {
-            background-color: #555;
+        .why-choose h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .why-choose p {
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
         }
 
         /* Footer Styling */
@@ -126,11 +131,6 @@
             font-size: 0.9rem;
             color: #333;
             text-align: center;
-        }
-
-        footer a {
-            color: #FFD700;
-            text-decoration: none;
         }
 
         /* Fade-in keyframe */
@@ -212,11 +212,11 @@
                 <p><strong>Specialized Detailing Services</strong></p>
                 <p><strong>Paint Correction & Polishing</strong><br>
                     <span class="price">Price: $250 - $500</span><br>
-                    Description: For vehicles with swirl marks, oxidation, or minor paint imperfections, our paint correction and polishing service restores the original shine and luster of your car’s paint.
+                    Description: For vehicles with swirl marks, oxidation, or minor paint imperfections, our paint correction and polishing service restores the original shine.
                 </p>
                 <p><strong>Headlight Restoration</strong><br>
                     <span class="price">Price: $75 - $125</span><br>
-                    Description: Over time, headlights can become foggy or yellowed. Our headlight restoration service removes oxidation and restores clarity.
+                    Description: Our headlight restoration service removes oxidation and restores clarity, improving visibility and appearance.
                 </p>
             </div>
 
@@ -243,8 +243,19 @@
             </div>
         </div>
 
-        <!-- Contact Button -->
-        <a href="mailto:contact@revivalsolutions.com"><button class="contact-btn">Contact Us</button></a>
+        <!-- Why Choose Section -->
+        <div class="why-choose">
+            <h3>Why Choose Revival Solutions?</h3>
+            <p>At Revival Solutions, we pride ourselves on providing the highest quality lawn care services tailored to meet the specific needs of each customer. Here’s why you should choose us for all your lawn care needs:</p>
+            <p><strong>Expert Knowledge and Experience</strong>: With years of experience in lawn maintenance and enhancement, our skilled team understands the nuances of lawn health, growth, and sustainability. Whether it’s mowing, fertilization, or pest control, we have the expertise to handle every aspect of your lawn care.</p>
+            <p><strong>Customized Service Plans</strong>: We offer customized care plans tailored to your lawn’s specific requirements. From seasonal clean-ups to specialized treatments, we adjust our services based on your needs.</p>
+            <p><strong>Commitment to Quality</strong>: We use only the best tools, techniques, and eco-friendly products to ensure the health and beauty of your lawn.</p>
+            <p><strong>Comprehensive Lawn Care</strong>: At Revival Solutions, we provide a full range of services, from mowing to pest control and more. Whether you're looking to refresh your lawn for the season or need ongoing maintenance, we’ve got you covered.</p>
+            <p><strong>Customer-Focused</strong>: Our team works efficiently while maintaining the highest standards of care, ensuring your lawn looks its best without inconvenience.</p>
+            <p><strong>Affordable and Transparent Pricing</strong>: We offer competitive pricing with no hidden fees. You’ll know exactly what you’re getting with no surprises.</p>
+            <p><strong>Experience the Revival Solutions Difference!</strong></p>
+            <p>Contact us today to schedule a consultation and see how we can help your lawn look its absolute best!</p>
+        </div>
     </div>
 
     <!-- Footer -->
